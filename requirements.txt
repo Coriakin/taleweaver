@@ -1,0 +1,22 @@
+# Minimal requirements for taleweaver EPUB generator
+# System dependencies:
+# - ffmpeg (required for audio processing)
+# - Java (optional, for EPUB validation with epubcheck)
+
+# Python dependencies
+beautifulsoup4>=4.11.0
+lxml>=4.9.0
+
+# Transcription backend - choose ONE:
+# For Apple Silicon (recommended):
+# parakeet-mlx  # Install via: pipx install parakeet-mlx
+
+# For NVIDIA GPUs:
+# nemo_toolkit[asr]
+
+# For general use (fallback):
+# openai-whisper
+
+# For PyTorch-based alignment:
+# torch
+# torchaudio
